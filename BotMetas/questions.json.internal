@@ -1,0 +1,78 @@
+{
+  "References": [ "Microsoft.Bot.Sample.AnnotatedSandwichBot.dll" ],
+  "Imports": [ "Microsoft.Bot.Sample.AnnotatedSandwichBot.Resource" ],
+  "type": "object",
+  "required": [
+    "King",
+    "EU",
+    "LargestIsland",
+    "Actress"
+  ],
+  "Templates": {
+    "NotUnderstood": {
+      "Patterns": [ "I do not understand \"{0}\".", "Try again, I don't get \"{0}\"." ]
+    },
+    "EnumSelectOne": {
+      "Patterns": [ "What the {&} helpful? {||}" ],
+      "ChoiceStyle": "Auto"
+    }
+  },
+  "properties": {
+    "ServiceCount": {
+      "Prompt": { "Patterns": [ "How many services do we have in Azure?\r\n1) Less than 10\r\n2) Less than 20\r\n3) Less than40\r\n4) More than 50" ] },
+      "Before": [ { "Message": [ "Greetings Human! \r\n Welcome to the session survey!\r\nType in the number for the right asnwer" ] } ],
+      "Describe": "",
+      "CorrectResponse": "4",
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 1,
+      "maximum": 4,
+      "After": [ { "Message": [ "Thank you" ] } ]
+    },    
+    "SessionIs": {
+      "Prompt": { "Patterns": [ "This sessio is:\r\n1) Totally Awesome!\r\n2) Meh...\r\n3) Session? What Session?\r\n4) Is lunch over?" ] },
+      "Describe": "",
+      "CorrectResponse": "1",
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 1,
+      "maximum": 4,
+      "After": [ { "Message": [ "Thank you" ] } ]
+    },    
+    "PresenterIs": {
+      "Prompt": { "Patterns": [ "The presenter is:\r\n1) Just briliant!\r\n2) Kind of boring...\r\n3) Very needy...\r\n4) Get him off the stage!" ] },
+      "Describe": "",
+      "CorrectResponse": "1",
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 1,
+      "maximum": 4,
+      "After": [ { "Message": [ "Thank you" ] } ]
+    },    
+    "Comments": {
+      "Prompt": { "Patterns": [ "Please let us know if you have any other comments" ] },
+      "Describe": "",
+      "type": [
+        "string",
+        "null"
+      ],
+      "After": [ { "Message": [ "Thank you!" ] } ]
+    },
+    "Email": {
+      "Prompt": { "Patterns": [ "Please enter your name or email to get a prize!" ] },
+      "Describe": "",
+      "type": [
+        "string",
+        "null"
+      ],
+      "After": [ { "Message": [ "Thank you for playing!" ] } ]
+    }
+  },
+  "OnCompletion": "await context.PostAsync(\"\");"
+}

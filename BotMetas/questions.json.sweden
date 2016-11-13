@@ -1,0 +1,90 @@
+{
+  "References": [ "Microsoft.Bot.Sample.AnnotatedSandwichBot.dll" ],
+  "Imports": [ "Microsoft.Bot.Sample.AnnotatedSandwichBot.Resource" ],
+  "type": "object",
+  "required": [
+    "King",
+    "EU",
+    "LargestIsland",
+    "Actress"
+  ],
+  "Templates": {
+    "NotUnderstood": {
+      "Patterns": [ "I do not understand \"{0}\".", "Try again, I don't get \"{0}\"." ]
+    },
+    "EnumSelectOne": {
+      "Patterns": [ "What the {&} helpful? {||}" ],
+      "ChoiceStyle": "Auto"
+    }
+  },
+  "properties": {
+    "King": {
+      "Prompt": { "Patterns": [ "What name was taken by Jean Baptiste Bernadotte when he became king of Sweden in 1818?\r\n1) Carl XIV Johan\r\n2) Olaf\r\n3) Gustav\r\n4) Harald" ] },
+      "Before": [ { "Message": [ "Greetings Human! \r\n Welcome to the Sweden Trivia Quiz!\r\nType in the number for the right asnwer" ] } ],
+      "Describe": { "Image": "http://nirsformbot.azurewebsites.net/images/olaf.jpg" },
+      "CorrectResponse": "1",
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 1,
+      "maximum": 4,
+      "After": [ { "Message": [ "Thank you" ] } ]
+    },    
+    "EU": {
+      "Prompt": { "Patterns": [ "When did Sweden become a member of the European Union?\r\n1) 1992\r\n2) 1995\r\n3) 2000\r\n4) 2002" ] },
+      "Describe": "",
+      "CorrectResponse": "2",
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 1,
+      "maximum": 4,
+      "After": [ { "Message": [ "Thank you" ] } ]
+    },    
+    "LargestIsland": {
+      "Prompt": { "Patterns": [ "Which is the largest island of Sweden?\r\n1) Oland\r\n2) Gotland\r\n3) Kattegat\r\n4) Bear Island" ] },
+      "Describe": "",
+      "CorrectResponse": "2",
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 1,
+      "maximum": 4,
+      "After": [ { "Message": [ "Thank you" ] } ]
+    },    
+    "Actress": {
+      "Prompt": { "Patterns": [ "Which of the following actresses was born in Stockholm?\r\n1) Jodie Foster\r\n2) Greta Garbo\r\n3) Sharon Stone\r\n4) Noomi Rapace" ] },
+      "Describe": { "Image": "http://nirsformbot.azurewebsites.net/images/noomi.jpg" },
+      "CorrectResponse": "2",
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 1,
+      "maximum": 4,
+      "After": [ { "Message": [ "Thank you" ] } ]
+    },    
+    "Comments": {
+      "Prompt": { "Patterns": [ "Please let us know if you have any other comments" ] },
+      "Describe": "",
+      "type": [
+        "string",
+        "null"
+      ],
+      "After": [ { "Message": [ "Thank you!" ] } ]
+    },
+    "Email": {
+      "Prompt": { "Patterns": [ "Please enter your email to get a prize!" ] },
+      "Describe": "",
+      "type": [
+        "string",
+        "null"
+      ],
+      "After": [ { "Message": [ "Thank you for playing!" ] } ]
+    }
+  },
+  "OnCompletion": "await context.PostAsync(\"\");"
+}

@@ -1,0 +1,16 @@
+C:\Websites\FormBot\BotBuilder-master\CSharp\Tests\FormTest\obj\Debug\FormTest.csprojResolveAssemblyReference.cache
+C:\Websites\FormBot\BotBuilder-master\CSharp\Tests\FormTest\obj\Debug\FormTest.Resource.Microsoft.Bot.Builder.FormFlowTest.PizzaOrder.resources
+C:\Websites\FormBot\BotBuilder-master\CSharp\Tests\FormTest\obj\Debug\FormTest.Resource.DynamicPizza.resources
+C:\Websites\FormBot\BotBuilder-master\CSharp\Tests\FormTest\obj\Debug\FormTest.Resource.DynamicPizza.en.resources
+C:\Websites\FormBot\BotBuilder-master\CSharp\Tests\FormTest\obj\Debug\FormTest.Resource.DynamicPizza.fr.resources
+C:\Websites\FormBot\BotBuilder-master\CSharp\Tests\FormTest\obj\Debug\FormTest.Resource.Microsoft.Bot.Builder.FormFlowTest.PizzaOrder.en.resources
+C:\Websites\FormBot\BotBuilder-master\CSharp\Tests\FormTest\obj\Debug\FormTest.Resource.Microsoft.Bot.Builder.FormFlowTest.PizzaOrder.fr.resources
+C:\Websites\FormBot\BotBuilder-master\CSharp\Tests\FormTest\obj\Debug\FormTest.csproj.GenerateResource.Cache
+C:\Websites\DemoSurveyBot\Tests\FormTest\obj\Debug\FormTest.csprojResolveAssemblyReference.cache
+C:\Websites\DemoSurveyBot\Tests\FormTest\obj\Debug\FormTest.Resource.Microsoft.Bot.Builder.FormFlowTest.PizzaOrder.resources
+C:\Websites\DemoSurveyBot\Tests\FormTest\obj\Debug\FormTest.Resource.DynamicPizza.resources
+C:\Websites\DemoSurveyBot\Tests\FormTest\obj\Debug\FormTest.Resource.DynamicPizza.en.resources
+C:\Websites\DemoSurveyBot\Tests\FormTest\obj\Debug\FormTest.Resource.DynamicPizza.fr.resources
+C:\Websites\DemoSurveyBot\Tests\FormTest\obj\Debug\FormTest.Resource.Microsoft.Bot.Builder.FormFlowTest.PizzaOrder.en.resources
+C:\Websites\DemoSurveyBot\Tests\FormTest\obj\Debug\FormTest.Resource.Microsoft.Bot.Builder.FormFlowTest.PizzaOrder.fr.resources
+C:\Websites\DemoSurveyBot\Tests\FormTest\obj\Debug\FormTest.csproj.GenerateResource.Cache

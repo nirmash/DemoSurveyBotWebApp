@@ -1,0 +1,2 @@
+C:\Websites\FormBot\BotBuilder-master\CSharp\Tests\Microsoft.Bot.Builder.Tests\obj\Debug\Microsoft.Bot.Builder.Tests.csprojResolveAssemblyReference.cache
+C:\Websites\DemoSurveyBot\Tests\Microsoft.Bot.Builder.Tests\obj\Debug\Microsoft.Bot.Builder.Tests.csprojResolveAssemblyReference.cache

@@ -1,0 +1,71 @@
+{
+  "References": [ "Microsoft.Bot.Sample.AnnotatedSandwichBot.dll" ],
+  "Imports": [ "Microsoft.Bot.Sample.AnnotatedSandwichBot.Resource" ],
+  "type": "object",
+  "required": [
+    "Session",
+    "Content",
+    "Speaker"
+  ],
+  "Templates": {
+    "NotUnderstood": {
+      "Patterns": [ "I do not understand \"{0}\".", "Try again, I don't get \"{0}\"." ]
+    },
+    "EnumSelectOne": {
+      "Patterns": [ "What the {&} helpful? {||}" ],
+      "ChoiceStyle": "Auto"
+    }
+  },
+  "properties": {
+    "Session": {
+      "Prompt": { "Patterns": [ "Select the session title {||}" ] },
+      "Before": [ { "Message": [ "Greetings Human! \r\n Welcome to the session feedback bot!" ] } ],
+      "Describe": "",
+      "CorrectResponse": "1",
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "Introduction to Azure",
+        "Manage your cloud infrastructure with Azure IaaS",
+        "Store and process data with Azure Document DB",
+        "Build Cloud Applications with Azure App Service"
+      ]
+    },
+    "Content": {
+      "Prompt": { "Patterns": [ "Was the content helpful? \r\n Enter a value between 1 (bad) and 5 (awesome)" ] },
+      "Describe": "",
+      "CorrectResponse": "1",
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 1,
+      "maximum": 5,
+      "After": [ { "Message": [ "Thank you" ] } ]
+    },
+    "Speaker": {
+      "Prompt": { "Patterns": [ "Was the speaker Knowledgeable? \r\n Enter a value between 1 (Nir is an idiot) and 5 (Nir is awesome)" ] },
+      "Describe": "",
+      "CorrectResponse": "1",
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 1,
+      "maximum": 5,
+      "After": [ { "Message": [ "Thank you" ] } ]
+    },
+    "Comments": {
+      "Prompt": { "Patterns": [ "Please let us know if you have any other comments" ] },
+      "Describe": "",
+      "type": [
+        "string",
+        "null"
+      ],
+      "After": [ { "Message": [ "Thank you for sharing!" ] } ]
+    }
+  },
+  "OnCompletion": "await context.PostAsync(\"Thanks for taking the time to provide feedback!\");"
+}

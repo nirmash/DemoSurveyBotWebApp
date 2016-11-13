@@ -1,0 +1,2 @@
+C:\Websites\FormBot\BotBuilder-master\CSharp\artifacts\obj\Microsoft.Bot.Sample.GraphBot\Debug\Microsoft.Bot.Sample.GraphBot.xprojResolveAssemblyReference.cache
+C:\Websites\DemoSurveyBot\artifacts\obj\Microsoft.Bot.Sample.GraphBot\Debug\Microsoft.Bot.Sample.GraphBot.xprojResolveAssemblyReference.cache
